@@ -1,0 +1,17 @@
+{
+  "name": "jarvis-wa-bot",
+  "version": "1.0.0",
+  "description": "Plugin-ready WhatsApp Web bot with QR and pairing-code dashboard",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
+    "express": "^4.21.2",
+    "qrcode": "^1.5.4"
+  }
+}

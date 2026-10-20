@@ -1,0 +1,21 @@
+{
+  "name": "Elaina WhatsApp Bot",
+  "description": "Elaina WhatsApp bot with a web dashboard, QR code and pairing code connection.",
+  "repository": "",
+  "keywords": [
+    "whatsapp",
+    "baileys",
+    "bot",
+    "docker"
+  ],
+  "env": {
+    "DASHBOARD_TOKEN": {
+      "description": "Secret dashboard password/token. Keep private.",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "Bot display name",
+      "required": false
+    }
+  }
+}

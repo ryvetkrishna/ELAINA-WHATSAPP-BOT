@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: jarvis-wa-bot
+    runtime: docker
+    plan: starter
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: BOT_NAME
+        value: Elaina
+      - key: DASHBOARD_TOKEN
+        sync: false
+      - key: SESSION_DIR
+        value: /var/data/session
+      - key: AUTO_CONNECT
+        value: "false"
+    disk:
+      name: jarvis-session
+      mountPath: /var/data
+      sizeGB: 1
